@@ -418,8 +418,52 @@ footer {
 .footer {
   display: flex;
 }
+.page-footer-link {
+  text-decoration: none;
+  color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
+}
 
-footer a {
+.page-footer-link-span {
+  color: #4d5ae5;
+  font-family: "Raleway";
+  font-weight: 700px;
+  size: 18px;
+  line-height: 1.16;
+  letter-spacing: 3%;
+}
+.page-footer-link-span:hover {
+  color: #404bbf;
+}
+.page-footer-link-span:focus {
+  color: #404bbf;
+}
+.footer-title {
+  font-family: "Raleway";
+  font-weight: 700px;
+  size: 18px;
+  line-height: 1.16;
+  letter-spacing: 3%;
+  color: #f4f4fd;
+}
+.footer-title:hover {
+  color: #404bbf;
+}
+.footer-title:focus {
+  color: #404bbf;
+}
+
+.footer-text {
+  color: #f4f4fd;
+  font-weight: 400px;
+  size: 16px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  max-width: 264px;
+}
+
+/*footer a {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -434,7 +478,7 @@ footer p {
   line-height: 24px;
   letter-spacing: 2%;
   color: #f4f4fd;
-}
+}*/
 
 .social-media-webside {
   width: 208px;
