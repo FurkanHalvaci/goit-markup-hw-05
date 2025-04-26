@@ -1,0 +1,482 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1158px;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0px;
+  margin: 0 auto;
+}
+:root {
+  --navy: #2e2f42;
+  --iris: #4d5ae5;
+  --hover: #404bbf;
+  --slate: #434455;
+}
+.page-body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: var(--slate);
+}
+.list-style {
+  list-style-type: none;
+}
+
+/* Header CSS */
+
+.logo-span,
+.logo-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16em;
+  letter-spacing: 3%;
+  color: var(--iris);
+}
+.logo-link {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.navigation-list-link {
+  font-family: inherit;
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 500px;
+  letter-spacing: 2%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  /* display: inline-block; */
+}
+
+.line-studio::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line-studio {
+  color: var(--hover);
+}
+
+/* .navigation-link:focus::after {
+  transform: scaleX(1);
+} */
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--hover);
+}
+.email-link,
+.tel-link {
+  font-family: inherit;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--navy);
+  letter-spacing: 2%;
+}
+
+.email-link:hover,
+.tel-link:hover {
+  color: var(--hover);
+}
+header {
+  height: 72px;
+}
+/* 3. ödev header css */
+.header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 24px 0px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
+  margin-left: 76px;
+  align-items: center;
+}
+
+.adress-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+/* Main CSS section-1 */
+.section-one {
+  background-color: var(--navy);
+  height: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice\ .jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 1440px;
+}
+.section-one-title {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 2%;
+}
+.section-one-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  color: white;
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+  width: 169px;
+  height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 48px;
+  border: none;
+}
+.section-one-button:hover,
+.section-one-button:focus {
+  background-color: var(--hover);
+}
+/* 3. ödev css */
+.section-one-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 188px;
+  left: 472px;
+
+  /* width: 496px;
+  margin-top: 188px;
+  margin-bottom: 188px;
+  margin-left: 472px;
+  margin-right: 472px; */
+}
+/* .section-one-button {
+  margin-top: 64px;
+} */
+/* Main CSS section-two */
+.section-one {
+  align-items: center;
+  position: relative;
+}
+.section-two-title {
+  color: var(--navy);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+}
+
+.section-two-list-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+/* 3.ödev css */
+.section-two-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.section-two-div {
+  margin: 0px auto;
+}
+
+.icons {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+/* Main CSS section-Three */
+.section-three {
+  background-color: #f4f4fd;
+}
+.section-three-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--navy);
+}
+.section-three-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  color: var(--navy);
+}
+.section-three-p {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 2%;
+}
+/* 3.ödev css */
+.section-three-list {
+  display: flex;
+  gap: 24px;
+  margin: 0px auto;
+  align-items: center;
+}
+.section-three-title {
+  margin-bottom: 72px;
+  width: 162px;
+  /* margin-left: 639px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-three-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 264px;
+  height: 428px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.16);
+}
+.section-three-div {
+  margin: 0 auto;
+}
+/* .section-three-header {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.section-three-p {
+  margin-bottom: 32px;
+} */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 232px;
+  height: 40px;
+}
+.social-media-icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-icons-teams {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-icons:hover {
+  background-color: #31d0aa;
+}
+.social-media-icons-teams:hover {
+  background-color: #404bbf;
+}
+
+.our-team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+/* Main CSS section four */
+
+.section-four-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 2%;
+  text-align: center;
+  color: var(--navy);
+}
+.section-four-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  color: var(--navy);
+}
+.section-four-p {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 2%;
+  margin-bottom: 32px;
+}
+/* 3. ödev css */
+
+.section-four-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin: 0 auto;
+  align-items: center;
+  width: 1128px;
+  width: calc((100%-24px) / 3);
+}
+.section-four-title {
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+.section-four-div {
+  margin: 0 auto;
+}
+.section-four-header {
+  margin-bottom: 8px;
+  /* margin-top: 32px; */
+}
+.section-four-list-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-card-div {
+  position: relative;
+  overflow: hidden;
+}
+.card-div {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+.our-portfolio-card {
+  color: #f4f4fd;
+  background-color: var(--iris);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-four-list-item:hover .our-portfolio-card {
+  transform: translateY(0);
+}
+.section-four-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.16);
+}
+
+/* Footer CSS */
+.page-footer {
+  background-color: var(--navy);
+  height: 312px;
+}
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f4f4fd;
+  letter-spacing: 3%;
+  line-height: 1.16;
+  text-decoration: none;
+}
+.footer-logo-span {
+  color: var(--iris);
+}
+.footer-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: #f4f4fd;
+}
+/* 3. ödev css */
+.footer-div {
+  width: 264px;
+
+  padding-top: 100px;
+  /* margin-left: 0px; */
+}
+.footer-p {
+  margin-top: 16px;
+}
+.footer {
+  display: flex;
+  max-width: 1440px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+.social-media-footer {
+  padding-top: 100px;
+  margin-left: 120px;
+}
+.footer-header {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
