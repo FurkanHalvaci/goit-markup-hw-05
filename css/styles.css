@@ -539,3 +539,18 @@ header {
   letter-spacing: 0.04em;
   color: var(--white);
 }
+.modal-backdrop{
+  position: fixed;
+  inset: 0px;
+  background-color: rgb(0, 0, 0,0.5);
+  /* display: none; */
+}
+.modal-content{
+  position: fixed;
+  top: 80px;
+  left:50%;
+  transform: translate(-50%); 
+  background-color: var(--white);
+  width: 408px;
+  height: 584px;
+}
