@@ -21,7 +21,7 @@ ul {
 
 .container {
   width: 1158px;
-  /* max-width: 1440px; */
+
   margin: 0 auto;
 }
 .section {
@@ -33,6 +33,7 @@ ul {
   --iris: #4d5ae5;
   --hover: #404bbf;
   --slate: #434455;
+  --white: #ffffff;
 }
 .page-body {
   font-family: Roboto, sans-serif;
@@ -451,6 +452,8 @@ header {
   line-height: 1.5;
   letter-spacing: 2%;
   color: #f4f4fd;
+  margin-top: 16px;
+  width: 264px;
 }
 /* 3. ödev css */
 .footer-div {
@@ -459,14 +462,12 @@ header {
   padding-top: 100px;
   /* margin-left: 0px; */
 }
-.footer-p {
-  margin-top: 16px;
-}
+
 .footer {
   display: flex;
   max-width: 1440px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin-left: auto;
+  margin-right: auto;
 }
 .social-media-footer {
   padding-top: 100px;
@@ -479,4 +480,56 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
+}
+.subscrible {
+  width: 453px;
+  height: 80px;
+  margin-left: 80px;
+  margin-top: 100px;
+  margin-right: 159px;
+}
+.subscrible-header {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.subscrible-input {
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--navy);
+  border-color: #ffffff;
+}
+.subscrible-btn {
+  width: 165px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--iris);
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  margin-left: 24px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  border: none;
+}
+.form {
+  display: flex;
+}
+.subscrible-input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: var(--white);
 }
