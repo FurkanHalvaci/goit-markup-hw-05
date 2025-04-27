@@ -488,8 +488,8 @@ header {
   margin-top: 100px;
   margin-right: 159px;
 }
-.subscrible-header {
-  margin-bottom: 16px;
+.subscrible-label {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -506,6 +506,8 @@ header {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--navy);
   border-color: #ffffff;
+  color: var(--white);
+  
 }
 .subscrible-btn {
   width: 165px;
@@ -514,16 +516,20 @@ header {
   background-color: var(--iris);
   color: white;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px;
+  font-weight: 500;
   margin-left: 24px;
   padding-top: 8px;
   padding-right: 24px;
   padding-bottom: 8px;
   padding-left: 24px;
   border: none;
+  display: flex;
+  gap: 16px;
 }
 .form {
   display: flex;
+  margin-top: 16px;
 }
 .subscrible-input::placeholder {
   font-family: inherit;

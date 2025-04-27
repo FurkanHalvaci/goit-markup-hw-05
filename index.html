@@ -485,17 +485,31 @@
           </div>
         </div>
         <div class="subscrible">
-          <h3 class="subscrible-header">
+          <label for="subscrible-email" class="subscrible-label">
             Subscrible
-          </h3>
+          </label>
+
           <form class="subscrible-form">
             <div class="form">
-               <input class="subscrible-input" name="subscrible-email" type="email" placeholder="E-mail">
-            <button class="subscrible-btn" type="submit">Subscrible</button>
+              <input
+                class="subscrible-input"
+                id="subscrible-email"
+                name="subscrible-email"
+                type="email"
+                placeholder="E-mail"
+              />
+              <button class="subscrible-btn" type="submit">
+                Subscrible
+                <svg>
+                  <use
+                    href="./images/icons.svg#icon-send"
+                    width="24"
+                    height="24"
+                  ></use>
+                </svg>
+              </button>
             </div>
-            
           </form>
-
         </div>
       </div>
     </footer>
