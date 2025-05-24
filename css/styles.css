@@ -601,6 +601,7 @@ header {
   width: 360px;
   height: 336px;
   margin: 0 auto;
+  
 }
 
 .form-personal-1 {
@@ -742,8 +743,8 @@ header {
 
 .click-icon {
   position: relative;
-  right: 15px;
-  bottom: 1px;
+  right: 11px;
+  top: 2px;
   cursor: pointer;
 }
 
@@ -800,3 +801,5 @@ header {
 .information-personal:focus + .information-icons {
   fill: #4d5ae5;
 }
+
+
